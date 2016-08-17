@@ -11,40 +11,61 @@
    "matchCanvasSize": true
   },
   {
-   "id": 1,
-   "name": "player",
+    "id": 1,
+    "name": "background",
+    "backgroundColor":  "#00ccbb",
+    "position": {
+     "x": 0,
+     "y": 0
+    },
+    "size":{
+      "width": 0,
+      "height": 0
+    },
+    "matchCanvasSize": true
+
+  },
+  {
+   "id": 2,
+   "name": "bubble-cursor",
+   "followMouse": true,
    "position": {
-    "x": 100,
-    "y": 100
+    "x": 280,
+    "y": 180
    },
    "size": {
-    "width": 100,
-    "height": 100
-   },
-   "velocity": {
-    "x": 0,
-    "y": 0
-   },
-   "playerController2d": {
-    "up": "up",
-    "down": "down",
-    "left": "left",
-    "right": "right"
-   },
-   "movement2d": {
-    "upMax": -0.5,
-    "downMax": 0.5,
-    "leftMax": -0.5,
-    "rightMax": 0.5,
-    "upAccel": -0.02,
-    "downAccel": 0.02,
-    "leftAccel": -0.02,
-    "rightAccel": 0.02
-   },
-   "friction": {
-    "x": 0.97,
-    "y": 0.97
+    "width": 1,
+    "height": 1
+  },
+  "timers": {
+     "addBubbles": {
+       "running": true,
+       "time": 0,
+       "max": 30,
+       "script": "./scripts/add-bubbles",
+       "loop": true
+     }
    }
+ },{
+  "id": 3,
+  "name": "static-particles",
+  "position": {
+   "x": 280,
+   "y": 180
+  },
+  "size": {
+   "width": 1,
+   "height": 1
+ },
+ "timers": {
+    "addBubbles": {
+      "running": true,
+      "time": 0,
+      "max": 30,
+      "script": "./scripts/add-bubbles",
+      "loop": true
+    }
   }
+ }
  ]
 }

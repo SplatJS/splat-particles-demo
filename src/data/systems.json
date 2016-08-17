@@ -1,5 +1,9 @@
 {
  "simulation": [
+   {
+    "name": "splat-ecs/lib/systems/decay-life-span",
+    "scenes": "all"
+   },
   {
    "name": "splat-ecs/lib/systems/match-canvas-size",
    "scenes": "all"
@@ -18,6 +22,10 @@
   },
   {
    "name": "splat-ecs/lib/systems/control-player",
+   "scenes": "all"
+  },
+  {
+   "name": "./systems/simulation/follow-mouse",
    "scenes": "all"
   },
   {
@@ -63,12 +71,16 @@
    "scenes": "all"
   },
   {
+   "name": "./systems/renderer/background-color",
+   "scenes": "all"
+  },
+  {
    "name": "splat-ecs/lib/systems/draw-image",
    "scenes": "all"
   },
   {
    "name": "splat-ecs/lib/systems/draw-rectangles",
-   "scenes": "all"
+   "scenes": []
   },
   {
    "name": "splat-ecs/lib/systems/viewport-reset",
@@ -76,7 +88,7 @@
   },
   {
    "name": "splat-ecs/lib/systems/draw-frame-rate",
-   "scenes": "all"
+   "scenes": []
   },
   {
    "name": "splat-ecs/lib/systems/revert-shake",
